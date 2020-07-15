@@ -8,12 +8,21 @@ function maxOfTwoNumbers(num1, num2) {
         return null;
     }
 }
-maxOfTwoNumbers(17, 18);
+console.log(maxOfTwoNumbers(81, 18));
 
 // Question 2
-function maxOfThree() {
-
-}
+function maxOfThree(num1, num2, num3) {
+    value = 0;
+    if (num1>num2) {
+       value = num1;
+    } else {
+       value = num2;
+    } if (num3>value) {
+       value = num3;
+    }
+    return value;
+  }
+  console.log(maxOfThree(81, 18, 322));
 
 // Question 3
 function isCharacterAVowel() {
