@@ -1,13 +1,29 @@
 // Question 1
-function maxOfTwoNumbers() {
-
+function maxOfTwoNumbers(a, b) {
+if (a > b) {
+    let max2 = a;
+    return (max2);
+} else if (a <= b){
+    let max2 = b;
+    return (max2);
 }
+}
+maxOfTwoNumbers(1, 10);
 
 // Question 2
-function maxOfThree() {
-
-}
-
+function maxOfThree(x, y, z) {
+    let max3 = null;
+      if (x > y) {
+          max3 = x;
+      } else {
+          max3 = y;
+      }
+      if(z > max3) {
+         max3 = z;
+      }
+    return (max3);  
+  }
+  maxOfThree(2, 2, 1);
 // Question 3
 function isCharacterAVowel() {
 
