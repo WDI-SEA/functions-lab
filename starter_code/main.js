@@ -25,9 +25,17 @@ function maxOfThree(num1, num2, num3) {
   console.log(maxOfThree(81, 18, 322));
 
 // Question 3
-function isCharacterAVowel() {
-
+const vowels = ["a", "e", "i", "o", "u"];
+function isCharacterAVowel(string) {
+  for (let i = 0; i<vowels.length; i++) {
+    if(string === vowels[i]) {
+      return true;
+    } else {
+      return false;
+    }
+  }
 }
+console.log(isCharacterAVowel("t"));
 
 // Question 4
 function sumArray() {
