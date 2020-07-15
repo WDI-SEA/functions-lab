@@ -47,24 +47,30 @@ function sumArray(data) {
 }
 sumArray([1, 2, 3, 4, 5, 6, 7, 8, 9, 10]);
 
-// Question 5
-function multiplyArray() {
-
+// Question 4
+function multiplyArray(data) {
+    let arrayMult = 1;
+    for (let i = 0; i < data.length; i++) {
+        arrayMult = arrayMult * data[i];
+    }
+    console.log(arrayMult);
 }
-
+multiplyArray([1, 2, 3, 4]);
 
 // Question 5
-var numberOfArguments = function(){
-  
+var numberOfArguments = function(data){
+  countInput = data.length;
+  console.log(countInput);
 }
-
+numberOfArguments([1, 2, 3, 4, 5, 6, 7, 8]);
 
 
 // Question 6
-var reverseString = function (){
-  
+var reverseString = function (words){
+ let backWords = words.split('').reverse().join('');
+ console.log(backWords);
 };
-
+reverseString('Testing');
 
 // Question 7
 function findLongestWord () {
