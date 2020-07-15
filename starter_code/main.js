@@ -80,10 +80,19 @@ console.log(reverseString("meow"));
 
 
 
-// Question 7
-function findLongestWord () {
-  
+// Question 7 //I've done this one before too!//
+anArray = ['tahoe', 'trailer', 'cool ranch doritos for life', 'donkey kong']
+
+function findLongestWord (array) {
+  let wordLength= 0;
+  for (let i = 0; i<array.length; i++) {
+    let newNew= array[i];
+    if (array[i].length>wordLength) {
+      wordLength=newNew.length;
+    }
+  }return wordLength;
 }
+console.log(findLongestWord(anArray));
 
 
 // Question 8
