@@ -24,7 +24,7 @@ function maxOfThree(num1, num2, num3) {
   }
   console.log(maxOfThree(81, 18, 322));
 
-// Question 3
+// Question 3 //I love Booleans
 const vowels = ["a", "e", "i", "o", "u"];
 function isCharacterAVowel(string) {
   for (let i = 0; i<vowels.length; i++) {
@@ -60,7 +60,7 @@ function multiplyArray(array) {
   multiplyArray(leArray);
 
 
-// Question 5
+// Question 5 //This one was quite easy once I realized arguments.length was a method.
 let numberOfArguments = function() {
   console.log(arguments.length);
 }
@@ -69,10 +69,15 @@ numberOfArguments(1,2,3,"string","more string","even more string", 0);
 
 
 
-// Question 6
-var reverseString = function (){
-  
+// Question 6 //I've done this one before!//
+let reverseString = function (string){
+  stringArray=string.split("");
+  stringReverse=stringArray.reverse();
+  newString=stringReverse.join("");
+  return newString;
 };
+console.log(reverseString("meow"));
+
 
 
 // Question 7
