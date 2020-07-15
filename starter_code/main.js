@@ -5,7 +5,7 @@ if (a > b) {
     return (max2);
 } else if (a <= b){
     let max2 = b;
-    return (max2);
+    console.log(max2);
 }
 }
 maxOfTwoNumbers(1, 10);
@@ -21,21 +21,33 @@ function maxOfThree(x, y, z) {
       if(z > max3) {
          max3 = z;
       }
-    return (max3);  
+    console.log(max3);  
   }
-  maxOfThree(2, 2, 1);
+maxOfThree(93, 67, 122);
+
 // Question 3
-function isCharacterAVowel() {
-
+function isCharacterAVowel(a) {
+    let b = a.toLowerCase();
+    if (b == 'a' || b == 'e' || b == 'i' 
+    || b == 'o' || b == 'u') {
+        console.log('True')
+    } else {
+        console.log('False')
+    }
 }
+isCharacterAVowel('I');
 
 // Question 4
-function sumArray() {
- 
+function sumArray(data) {
+    let arraySum = 0;
+    for (let i = 0; i < data.length; i++) {
+        arraySum = arraySum + data[i];
+    }
+    console.log(arraySum);
 }
+sumArray([1, 2, 3, 4, 5, 6, 7, 8, 9, 10]);
 
-
-// Question 4
+// Question 5
 function multiplyArray() {
 
 }
