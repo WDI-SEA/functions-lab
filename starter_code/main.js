@@ -95,10 +95,19 @@ function findLongestWord (array) {
 console.log(findLongestWord(anArray));
 
 
-// Question 8
-function filterLongWords () {
-  
+// Question 8 //I love arrays so much (jk)//
+let arr = ['taco', 'bell', 'chili cheese fries', 'am', 'taco taco'];
+let j =5;
+let newArr = [];
+function filterLongWords (array, num) {
+  for (i=0; i<array.length;i++) {
+    let arr2 = array[i];
+    if (arr2.length>num) {
+      newArr.push(arr2);
+    }
+  }console.log(newArr);
 }
+filterLongWords (arr, j);
 
 
 // Bonus 1
