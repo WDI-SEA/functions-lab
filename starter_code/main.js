@@ -38,7 +38,7 @@ function isCharacterAVowel(string) {
 console.log(isCharacterAVowel("t"));
 
 // Question 4
-let addME = [1,2,3,4,5];
+let leArray = [1,2,3,4,5];
 function sumArray(array) {
   let sum = 0;
   for (let i = 0; i<array.length; i++) {
@@ -46,13 +46,18 @@ function sumArray(array) {
   }
   console.log(sum);
 }
-sumArray(addME);
+sumArray(leArray);
 
 
 // Question 4
-function multiplyArray() {
-
-}
+function multiplyArray(array) {
+    let product = 1;
+    for (let i = 0; i<array.length; i++) {
+      product *= array[i];
+    }
+    console.log(product);
+  }
+  multiplyArray(leArray);
 
 
 // Question 5
