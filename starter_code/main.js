@@ -75,7 +75,14 @@ function multiplyArray(array)
 // Question 5
 var numberOfArguments = function()
 {
+    var numArgue = 0;
 
+    for (let i = 0; i < arguments.length; i++)
+    {
+        numArgue++;
+    }
+
+    return numArgue;
 }
 
 
@@ -209,7 +216,8 @@ console.log(120);
 console.log(multiplyArray([1,2,3,4,-5]));
 console.log(-120);
 
-
+console.log(numberOfArguments(1,2,3,4,5));
+console.log(5);
 
 var pot = "pot";
 console.log(reverseString(pot));
@@ -232,4 +240,4 @@ console.log(["yeet", "whaaaaa", "coolbeansbro", "water you doin?", "cold"])
 
 
 
-console.log(charactersOccurencesCount(GeneralAssembly));
+console.log(charactersOccurencesCount("GeneralAssembly"));
