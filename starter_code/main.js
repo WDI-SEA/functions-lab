@@ -34,42 +34,65 @@ function isCharacterAVowel(character)
     switch (character.toUpperCase())
     {
         case "A":
-        case "B":
-        case "C":
+        case "E":
+        case "I":
         case "O":
         case "U":
             return true;
-            break;
         default:
             return false;
-            break;
     }
 }
 
 // Question 4
-function sumArray() {
- 
+function sumArray(array) 
+{
+    var sum = 0;
+
+    for (let i = 0; i < array.length; i++)
+    {
+        sum += array[i];
+    }
+
+    return sum;
 }
 
 
 // Question 4
-function multiplyArray() {
+function multiplyArray(array) 
+{
+    var product = 1;
 
+    for (let i = 0; i < array.length; i++)
+    {
+        product *= array[i];
+    }
+
+    return product;
 }
 
 
 // Question 5
-var numberOfArguments = function(){
-  
+var numberOfArguments = function()
+{
+
 }
 
 
-
 // Question 6
-var reverseString = function (){
-  
-};
+var reverseString = function (notReverse)
+{
+    var reverse = "";
 
+    for (let i = notReverse.length - 1; i >= 0; i--)
+    {
+        reverse += notReverse[i];
+    }
+
+    return reverse;
+};
+var pot = "pot";
+console.log(reverseString(pot));
 
 // Question 7
 function findLongestWord () {
