@@ -1,60 +1,116 @@
-// Question 1
-function maxOfTwoNumbers() {
 
+function maxOfTwoNumbers(num1, num2) {
+  if (num1 > num2) {
+    return num1;
+  } else {
+    return num2;
+  }
 }
 
-// Question 2
-function maxOfThree() {
+console.log(maxOfTwoNumbers(9, 5));
 
+
+
+function maxOfThree(num1, num2, num3) {
+  let arr = [num1, num2, num3];
+  let newArr = arr.sort();
+  return newArr[2];
 }
 
-// Question 3
-function isCharacterAVowel() {
+console.log(maxOfThree(8, 4, 6));
 
+
+
+function isCharacterAVowel(letter) {
+  if (letter === "a") {
+    return true;
+  } else if (letter === "e") {
+    return true;
+  } else if (letter === "i") {
+    return true;
+  } else if (letter === "o") {
+    return true;
+  } else if (letter === "u") {
+    return true;
+  } else {
+    return false;
+  }
 }
 
-// Question 4
-function sumArray() {
- 
+console.log(isCharacterAVowel("z"));
+
+
+
+function sumArr(numArr) {
+  return numArr.reduce(function(a,b) {
+    return a + b
+  }, 0);
 }
 
+console.log(sumArr([2, 4, 16]));
 
-// Question 4
-function multiplyArray() {
 
+
+
+function multArr(numArr) {
+  return numArr.reduce(function(a, b) {
+    return a * b
+  });
 }
 
+console.log(multArr([2, 10, 5]));
 
-// Question 5
-var numberOfArguments = function(){
-  
+
+
+function returnArgs() {
+  let args = arguments.length;
+  return args;
 }
 
+console.log(returnArgs("one", "two", "three", 5));
 
 
-// Question 6
-var reverseString = function (){
-  
-};
 
-
-// Question 7
-function findLongestWord () {
-  
+function reverseString(str) {
+  let splitString = str.split("");
+  let reverseArray = splitString.reverse();
+  let joinArray = reverseArray.join("");
+  return joinArray;
 }
 
+console.log(reverseString("thisisaword"));
 
-// Question 8
-function filterLongWords () {
-  
+
+
+function findLongestWord(arr) {
+  let longestWord = 0;
+  for (let i = 0; i < arr.length; i++) {
+    if (arr[i].length > longestWord) {
+      longestWord = arr[i].length;
+    }
+  }
+return longestWord;
 }
 
-
-// Bonus 1
-//??????
+console.log(findLongestWord(["here", "we", "goppppdpdppd", "looking"]));
 
 
-// Bonus 2
+
+
+function filterLongWords(arr, num) {
+  let newArr = [];
+  for (let i = 0; i < arr.length; i++) {
+    if (arr[i].length > num) {
+      newArr.push(arr[i]);
+    }
+  }
+  return newArr
+}
+
+console.log(filterLongWords([";jbcae", "akjbxliube", "ejde", "k"], 3));
+
+
+
 function charactersOccurencesCount() {
   
 }
