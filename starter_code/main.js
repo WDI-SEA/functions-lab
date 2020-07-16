@@ -1,12 +1,10 @@
-// Question 1
+// Question 1 // I managed to slim this down a bit
 function maxOfTwoNumbers(num1, num2) {
-    if (num1>num2) {
-        return num1;
-    } else if (num2>num1) {
-        return num2;
+  if (num1>num2) {
+    return num1;
     } else {
-        return null;
-    }
+      return num2
+  }
 }
 console.log(maxOfTwoNumbers(81, 18));
 
