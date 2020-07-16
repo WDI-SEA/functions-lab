@@ -14,12 +14,12 @@ console.log(maxOfTwoNumbers(9, 16));
 
 
 
-
+//edited to delete equal signs, becasue that doesnt tell us greater necessarily.
 
 function maxOfThree(a, b, c) {
-    if ((a >= b) && (a >= c)) { 
+    if ((a > b) && (a > c)) { 
         return a;
-            } else if ((b >= a) && (b >= c)) {
+            } else if ((b > a) && (b > c)) {
             return b;
                 } else {
                 return c;
