@@ -125,17 +125,17 @@ console.log(12);
 console.log(maxOfTwoNumbers(0,0));
 console.log(0);
 
-console.log(maxOfThreeNumbers(10,10,10));
+console.log(maxOfThree(10,10,10));
 console.log(10);
-console.log(maxOfThreeNumbers(10,12,11));
+console.log(maxOfThree(10,12,11));
 console.log(12);
-console.log(maxOfThreeNumbers(15,12,15));
+console.log(maxOfThree(15,12,15));
 console.log(15);
-console.log(maxOfThreeNumbers(15-134,12,12));
+console.log(maxOfThree(15-134,12,12));
 console.log(12);
-console.log(maxOfThreeNumbers(0,0,0));
+console.log(maxOfThree(0,0,0));
 console.log(0);
-console.log(maxOfThreeNumbers(1,0,0));
+console.log(maxOfThree(1,0,0));
 console.log(1);
 
 console.log(isCharacterAVowel("A"));
