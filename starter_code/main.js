@@ -36,9 +36,8 @@ function isCharacterAVowel( [a, b, c, d]) {
         }
     }
     return false;
-
 }
-console.log(isCharacterAVowel(['a', 'b', 'c', 'd']));
+console.log(isCharacterAVowel(['b']));
 
 // Question 4
 function sumArray(num) {
@@ -95,10 +94,7 @@ console.log(word);
   
 // Question 8
 function filterLongWords (str) {
-  var longestword = str.split('').sort(function(a, b){
-      return b.length - a.length;
-  });
-  return longestword[0].length;
+  var filterLongWords
 }
 console.log()
 
