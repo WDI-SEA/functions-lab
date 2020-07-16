@@ -19,6 +19,7 @@ console.log(maxOfThree (44,122,999))
 
 // Question 3
 function isCharacterAVowel(char) {
+    var char = char.toLowerCase();
     if (char === "a"|| char === "e"|| char === "i"|| char === "o"|| char === "u") {
         return "True" ;
     } else {
@@ -26,7 +27,7 @@ function isCharacterAVowel(char) {
     }
 
 }
-console.log("char b is " + isCharacterAVowel("b"))
+console.log("char B is " + isCharacterAVowel("B"))
 console.log("char a is " + isCharacterAVowel("a"))
 
 // Question 4
@@ -129,4 +130,18 @@ function charFreq(inputString) {
   console.log(charFreq("General Assembly"));
 
 // Bonus 2
+// function charactersOccurencesCount(string) {
+//     let obj = {}
+//     let result1 = string.split("")
+//     for (let i = 0; i < string.length; i++) {
+//       let str1 = string[i];
+//       if(obj[str1] === undefined) {
+//         obj[str1] = 1;
+//       } else {
+//         obj[str1]++
+//       }
+//     }
+//     return obj;
+// }
+// console.log(charactersOccurencesCount("hello world"));
 
