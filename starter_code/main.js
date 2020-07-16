@@ -111,9 +111,14 @@ function findLongestWord (array)
 
 
 // Question 8
-function filterLongWords () 
+function filterLongWords (array, num) 
 {
-  
+    var longWords = [];
+
+    for (let i = 0; i < array.length; i++)
+    {
+        
+    }
 }
 
 
