@@ -92,7 +92,7 @@ function findLongestWord (array) {
 
 // Question 8
 function filterLongWords (array, n) {
-    var newArr = [];
+    var newArr = []; //new array 
     for (let i = 0; i < array.length; i++) {
       if (array[i].length > n) {
         newArr.push(array[i]);
@@ -101,7 +101,7 @@ function filterLongWords (array, n) {
     return newArr
   }
   console.log(filterLongWords(['Levine', 'Francis', 'Tim', 'Ko'], 1));
-
+                                  0           1        2      3
 
 // Bonus 1
 //??????
