@@ -187,3 +187,8 @@ console.log("top");
 console.log(reverseString("sag eroM"));
 console.log("More gas");
 
+console.log(findLongestWord(["potato","tomato","superduper","what"]));
+console.log("superduper");
+console.log(findLongestWord(["potato","tomato","lotamo","motawo"]));
+console.log("potato");
+
