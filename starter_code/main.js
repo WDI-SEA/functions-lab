@@ -46,6 +46,19 @@ function sumArray(array) {
 }
 console.log(sumArray(leArray));
 
+//Alternate way for both multiply and sum
+//I dont quite fully understand callbacks and arrow functions yet though so i don't want to claim credit!
+
+
+let sum = leArray.reduce((acc, val) => {
+  return acc + val;
+});
+console.log(sum);
+
+let mult = leArray.reduce((acc, val) => {
+  return acc * val;
+});
+console.log(mult);
 
 // Question 4
 function multiplyArray(array) {
