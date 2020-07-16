@@ -13,6 +13,7 @@ maxOfTwoNumbers(1, 10);
 // Question 2
 function maxOfThree(x, y, z) {
     let max3 = null;
+
       if (x > y) {
           max3 = x;
       } else {
@@ -40,6 +41,7 @@ isCharacterAVowel('I');
 // Question 4
 function sumArray(data) {
     let arraySum = 0;
+
     for (let i = 0; i < data.length; i++) {
         arraySum = arraySum + data[i];
     }
@@ -50,6 +52,7 @@ sumArray([1, 2, 3, 4, 5, 6, 7, 8, 9, 10]);
 // Question 4
 function multiplyArray(data) {
     let arrayMult = 1;
+
     for (let i = 0; i < data.length; i++) {
         arrayMult = arrayMult * data[i];
     }
@@ -73,16 +76,35 @@ var reverseString = function (words){
 reverseString('Testing');
 
 // Question 7
-function findLongestWord () {
-  
-}
+let randomWords = ['First', 'Backflip', 'fail', 'try', 'Rodeo'];
 
+function findLongestWord (wordArray) {
+    let longest = '1';
+
+    for (let i = 0; i < wordArray.length; i++) {
+       let wordLength =  wordArray[i].length;
+       if (wordLength > longest.length) {
+           longest = wordArray[i];
+       }
+    }
+    console.log(longest);
+};
+findLongestWord(randomWords);
 
 // Question 8
-function filterLongWords () {
-  
-}
+function filterLongWords (wordArray, number) {
+    let newArray = [];
+    let newArrayCounter = 0;
 
+    for (let i = 0; i < wordArray.length; i++) {
+        if (wordArray[i].length > number) {
+            newArray[newArrayCounter] = wordArray[i];
+            newArrayCounter += 1;
+        }
+     }
+     console.log(newArray);
+};
+filterLongWords(randomWords, 4);
 
 // Bonus 1
 //??????
