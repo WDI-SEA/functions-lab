@@ -10,7 +10,7 @@ console.log(maxOfTwoNumbers(81, 18));
 
 // Question 2
 function maxOfThree(num1, num2, num3) {
-   let value = 0;
+   let value;
     if (num1>num2) {
        value = num1;
     } else {
