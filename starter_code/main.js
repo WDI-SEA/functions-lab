@@ -83,16 +83,19 @@ console.log(findLongestWord(["one", "two", "twenty"]));
 
 // Question 8 **
 //takes an array of words and a number i and returns a new array of words that are longer than i characters long
-function filterLongWords (array, num) {
-    let newArray = "";
-    for (let i = 0; i < array.length; i++) {
-        if (array[i].length > num) {
-            newArray.push(arr[i]);
+function filterLongWords(words, maxLength) {
+    var splitString = words.split(" ");
+    var longWords = [];
+
+    for (var i = 0; i < splitString.length; i++) {
+        var word = splitString[i];
+        if (word.length > maxLength) {
+            longWords.push(word);
         }
     }
-    return newArray
+    return longWords;
 }
-console.log(filterLongWords(["one", "two", "three"], 6));
+console.log(filterLongWords("Web Development Course", 2));
 
 // Bonus 1
 //??????
