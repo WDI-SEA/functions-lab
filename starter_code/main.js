@@ -91,8 +91,7 @@ var reverseString = function (notReverse)
 
     return reverse;
 };
-var pot = "pot";
-console.log(reverseString(pot));
+
 
 // Question 7
 function findLongestWord () {
@@ -114,4 +113,65 @@ function filterLongWords () {
 function charactersOccurencesCount() {
   
 }
+
+console.log(maxOfTwoNumbers(10,10));
+console.log(10);
+console.log(maxOfTwoNumbers(10,12));
+console.log(12);
+console.log(maxOfTwoNumbers(15,12));
+console.log(15);
+console.log(maxOfTwoNumbers(15-134,12));
+console.log(12);
+console.log(maxOfTwoNumbers(0,0));
+console.log(0);
+
+console.log(maxOfThreeNumbers(10,10,10));
+console.log(10);
+console.log(maxOfThreeNumbers(10,12,11));
+console.log(12);
+console.log(maxOfThreeNumbers(15,12,15));
+console.log(15);
+console.log(maxOfThreeNumbers(15-134,12,12));
+console.log(12);
+console.log(maxOfThreeNumbers(0,0,0));
+console.log(0);
+console.log(maxOfThreeNumbers(1,0,0));
+console.log(1);
+
+console.log(isCharacterAVowel("A"));
+console.log("true");
+console.log(isCharacterAVowel("E"));
+console.log("true");
+console.log(isCharacterAVowel("a"));
+console.log("true");
+console.log(isCharacterAVowel("e"));
+console.log("true");
+console.log(isCharacterAVowel("B"));
+console.log("false");
+console.log(isCharacterAVowel("b"));
+console.log("false");
+
+console.log(sumArray([1,2,3,4]));
+console.log(10);
+console.log(sumArray([1,2,-3,4]));
+console.log(4);
+console.log(sumArray([0,1,2,3,4,5]));
+console.log(15);
+
+console.log(multiplyArray([1,2,3,4]));
+console.log(24);
+console.log(multiplyArray([0,1,2,3,4,5]));
+console.log(0);
+console.log(multiplyArray([1,2,3,4,5]));
+console.log(120);
+console.log(multiplyArray([1,2,3,4,-5]));
+console.log(-120);
+
+
+
+var pot = "pot";
+console.log(reverseString(pot));
+console.log("top");
+console.log(reverseString("sag eroM"));
+console.log("More gas");
 
