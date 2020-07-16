@@ -34,9 +34,21 @@ function isCharacterAVowel(char) {
     } else {
         console.log("Flase");
     }
-
-
 }
+// rome example
+// function isCharacterAVowel(char) {
+//     let vowel = 'aeiou';
+//     let index = vowel.indexOf(char);
+
+//     if (index === -1) {
+//         console.log('true');
+
+//     } else {
+//         console.log ('true');
+//     }
+
+
+// }
 // function called
 isCharacterAVowel("u");
 
@@ -57,8 +69,8 @@ console.log(sumArray([1,2,9,4]));
 function multiplyArray(array) {
     let result = 1;
     for (let i = 0 ; i <array.length ; i++) {
-        result = result * array[i];
-
+        //result = result * array[i];
+        result *= array[i];
     }
     return result;
 
@@ -69,8 +81,10 @@ console.log(multiplyArray([1,2,7,5]));
 
 // Question 5
 var numberOfArguments = function(){
-    argumentsArray = Array.from(arguments);
-    console.log(argumentsArray.length);
+    // argumentsArray = Array.from(arguments);
+    // console.log(argumentsArray.length);
+
+    return arguments.length; // you can use predefined function
 }
 
 // calls the function and print the result in console
@@ -85,6 +99,21 @@ var reverseString = function (str){
         newString += str[i];
 }
 return newString};
+
+
+//rome solution
+var reverseString = function (str){
+    //1 
+    // let splitString = string.split(''),
+    // let reverseString = splitString.reverse();
+    // let joinString = reverseString.join();
+    // 2
+    let result = str.split('').reverse().join('');
+    //console.log(result);
+
+}
+
+
 // calls the function and print the result in console
 console.log(reverseString("hello"));
 
@@ -113,12 +142,20 @@ console.log(findLongestWord(['David', 'Subrata', 'Martin', 'Yoel', 'han']));
 
 
 // Question 8
-// function filterLongWords () {
-//     const result = filterLongWords.filter(word => word.length > i);
 
-  
-// }
-// console.log(filterLongWords(['David', 'Subrata', 'Martin', 'Yoel', 'han']));
+// Margaret solution
+function filterLongWords (arr,i) {
+    var newArr = [];
+    for (let x = 0; x < arr.length; x++){
+        var item = arr[x];
+        if (item.length > i) {
+            newArr.push(item);
+        }
+    }
+    return newArr;
+}
+const names = ['David', 'Subrata', 'Martin', 'Yoel', 'han'];
+console.log(filterLongWords(names, 4));
 
 
 // Bonus 1
@@ -126,7 +163,25 @@ console.log(findLongestWord(['David', 'Subrata', 'Martin', 'Yoel', 'han']));
 
 
 // Bonus 2
-function charactersOccurencesCount() {
+function charactersOccurencesCount(str) {
+    const result = {};
+
+    let lowerString = str.toLowerCase();
+
+    for (let i =0; i < lowerString.length; i++) {
+        let char = lowerString[i];
+        if (char === ' '){
+            continue;
+        } else if (result[char] === undefined) {
+            result[char] = 1
+        } else {
+            result[char] += 1
+        }
+    }
+
+    return result;
   
 }
 
+let x = charactersOccurencesCount('General Assembly');
+console.log(x);
