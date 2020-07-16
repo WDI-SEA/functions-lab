@@ -152,6 +152,8 @@ function charactersOccurencesCount(word)
             }
         }
     }
+
+    return letterAndNumber;
 }
 
 console.log(maxOfTwoNumbers(10,10));
@@ -227,3 +229,7 @@ console.log(filterLongWords(words, 7));
 console.log(["coolbeansbro", "water you doin?"])
 console.log(filterLongWords(words, 3));
 console.log(["yeet", "whaaaaa", "coolbeansbro", "water you doin?", "cold"])
+
+
+
+console.log(charactersOccurencesCount(GeneralAssembly));
