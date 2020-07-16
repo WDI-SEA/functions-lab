@@ -132,8 +132,26 @@ function filterLongWords (array, num)
 
 
 // Bonus 2
-function charactersOccurencesCount() {
-  
+function charactersOccurencesCount(word) 
+{
+    var letterAndNumber = [];
+    
+    for(let i = 0; i < word.length; i++)
+    {
+        for (let j = 0; j < letterAndNumber.length; j++)
+        {
+            if (word[i] === letterAndNumber[j][0])
+            {
+                letterAndNumber[j][1]++;
+                break;
+            }
+            else if (word[i] !== letterAndNumber[j][0] && j === letterAndNumber.length - 1)
+            {
+                letterAndNumber[letterAndNumber.length][0] = word[i];
+                letterAndNumber[letterAndNumber.length][1] = 1;
+            }
+        }
+    }
 }
 
 console.log(maxOfTwoNumbers(10,10));
