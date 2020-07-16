@@ -54,9 +54,9 @@ function sumArray(someArray) {
     let sumTracker = 0; 
 
     for (var i = 0; i < someArray.length; i++){
-        sumTracker += someArray[i]
+        sumTracker += someArray[i];
     }
-    
+
     return sumTracker;
 }
 
@@ -67,7 +67,7 @@ function multiplyArray(someArray) {
     let multiplyTracker = 1; //counter must be set at 1, as multiplying by zero will cause multiplyTracker to return 0
 
     for (var i = 0; i < someArray.length; i++){
-        multiplyTracker *= someArray[i]
+        multiplyTracker *= someArray[i];
     }
 
     return multiplyTracker;
@@ -93,8 +93,9 @@ var reverseString = function (string){
     for (var i = string.length - 1; i >= 0; i--){ //decrementing for loop
         backwardsString += string[i];
     }
+
     return backwardsString;
-};
+}
 // console.log(reverseString('decrementing'))
 
 
@@ -104,11 +105,13 @@ var reverseString = function (string){
 // and returns the length of the longest word in the array
 
 function findLongestWord (wordArray) {
-    let currentWord = ''
-    for (var i = 0; i < wordArray.length; i++)
+    let currentWord = '';
+    for (var i = 0; i < wordArray.length; i++){
         if (wordArray[i].length > currentWord.length){
             currentWord = wordArray[i];
+        }
     }
+
     return currentWord;
 }
 // console.log(findLongestWord(['ant', 'bananas', 'apple', 'troglodyte']))
@@ -118,11 +121,13 @@ function findLongestWord (wordArray) {
 //returns a new array of words that are longer than `i` characters long
 function filterLongWords (wordArray, num) {
     let wordsLongerThanNum = [];
-    for (var i = 0; i < wordArray.length; i++)
+    for (var i = 0; i < wordArray.length; i++){
         if (wordArray[i].length > num){
-            wordsLongerThanNum.push(wordArray[i]) //push() appends new item to an array.
+            wordsLongerThanNum.push(wordArray[i]); //push() appends new item to an array.
         }
-        return wordsLongerThanNum;
+    }
+
+    return wordsLongerThanNum;
 }
 // console.log(filterLongWords(['and', 'suck', 'a', 'banana', 'ay', 'anxiety'], 3))
 
