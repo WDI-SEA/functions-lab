@@ -12,7 +12,7 @@ console.log(maxOfTwoNumbers(81, 18));
 
 // Question 2
 function maxOfThree(num1, num2, num3) {
-    value = 0;
+   let value = 0;
     if (num1>num2) {
        value = num1;
     } else {
@@ -44,9 +44,9 @@ function sumArray(array) {
   for (let i = 0; i<array.length; i++) {
     sum += array[i];
   }
-  console.log(sum);
+  return sum;
 }
-sumArray(leArray);
+console.log(sumArray(leArray));
 
 
 // Question 4
@@ -55,17 +55,17 @@ function multiplyArray(array) {
     for (let i = 0; i<array.length; i++) {
       product *= array[i];
     }
-    console.log(product);
+    return product;
   }
-  multiplyArray(leArray);
+  console.log(multiplyArray(leArray));
 
 
 // Question 5 //This one was quite easy once I realized arguments.length was a method.
 let numberOfArguments = function() {
-  console.log(arguments.length);
+  return arguments.length;
 }
 
-numberOfArguments(1,2,3,"string","more string","even more string", 0);
+console.log(numberOfArguments(1,2,3,"string","more string","even more string", 0));
 
 
 
@@ -100,22 +100,29 @@ let arr = ['taco', 'bell', 'chili cheese fries', 'am', 'taco taco'];
 let j =5;
 let newArr = [];
 function filterLongWords (array, num) {
-  for (i=0; i<array.length;i++) {
+  for (let i=0; i<array.length;i++) {
     let arr2 = array[i];
     if (arr2.length>num) {
       newArr.push(arr2);
     }
-  }console.log(newArr);
+  }return newArr;
 }
-filterLongWords (arr, j);
+console.log(filterLongWords (arr, j));
 
 
 // Bonus 1
-//??????
-
-
-// Bonus 2
-function charactersOccurencesCount() {
-  
+ 
+function charOccursCount(string) {
+  let chars = {};
+  let strLc = string.toLowerCase();
+  for (let i = 0; i <strLc.length; i++) {
+    if (typeof chars[strLc.charAt(i)] == 'undefined') {
+      chars[strLc.charAt(i)] =1;
+    } else {
+      chars[strLc.charAt(i)] = chars[strLc.charAt(i)] +1;
+    }
+  } return chars;
 }
+
+console.log(charOccursCount('General Assembly'));
 
