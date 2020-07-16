@@ -117,8 +117,13 @@ function filterLongWords (array, num)
 
     for (let i = 0; i < array.length; i++)
     {
-        
+        if (array[i].length > num)
+        {
+            longWords.push(array[i]);
+        }
     }
+
+    return longWords;
 }
 
 
@@ -197,3 +202,10 @@ console.log("superduper");
 console.log(findLongestWord(["potato","tomato","lotamo","motawo"]));
 console.log("potato");
 
+var words = ["yeet", "whaaaaa", "coolbeansbro", "water you doin?", "cold", "big"]
+console.log(filterLongWords(words, 4));
+console.log(["whaaaaa", "coolbeansbro", "water you doin?"])
+console.log(filterLongWords(words, 7));
+console.log(["coolbeansbro", "water you doin?"])
+console.log(filterLongWords(words, 3));
+console.log(["yeet", "whaaaaa", "coolbeansbro", "water you doin?", "cold"])
