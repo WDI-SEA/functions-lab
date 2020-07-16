@@ -94,13 +94,25 @@ var reverseString = function (notReverse)
 
 
 // Question 7
-function findLongestWord () {
-  
+function findLongestWord (array) 
+{
+    var longest = "";
+
+    for (let i = 0; i < array.length; i++)
+    {
+        if (array[i].length > longest.length)
+        {
+            longest = array[i];
+        }
+    }
+
+    return longest;
 }
 
 
 // Question 8
-function filterLongWords () {
+function filterLongWords () 
+{
   
 }
 
