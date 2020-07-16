@@ -29,6 +29,7 @@ console.log(maxOfThree(93, 67, 122));
 // Question 3
 function isCharacterAVowel(a) {
     let b = a.toLowerCase();
+
     if (b == 'a' || b == 'e' || b == 'i' 
     || b == 'o' || b == 'u') {
         return ('True')
@@ -84,7 +85,7 @@ function findLongestWord (wordArray) {
     for (let i = 0; i < wordArray.length; i++) {
        let wordLength =  wordArray[i].length;
        if (wordLength > longest.length) {
-           longest = wordArray[i];
+           longest = wordArray[i].length; //I had this outputing the longest word. updated to output length.
        }
     }
     return (longest);
@@ -107,11 +108,28 @@ function filterLongWords (wordArray, number) {
 console.log(filterLongWords(randomWords, 4));
 
 // Bonus 1
-//??????
+// const letErRip = 'Mississippi'
 
+// function objectCharacterCounts(word) {
+//     const wordBreakdown = {};
+//     let splitWord = word.split('');
+    
+//     for (i = 0; i < word.length; i++) {
+//         let elementKey = splitWord[i];
+//         wordBreakdown.push(elementKey);
+//     }
+//     console.log(wordBreakdown);
+//     console.log(splitWord[0]);
+// }
+// objectCharacterCounts(letErRip);
 
 // Bonus 2
-function charactersOccurencesCount() {
-  
-}
+// function charactersOccurencesCount(word) {
+//     let splitWord = word.split('');
 
+//     for (i = 0; i > word.length; i++){
+//         let letter = word.charAt(i);
+//         console.log(letter);
+//     }
+// }
+// charactersOccurencesCount(letErRip);
