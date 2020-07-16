@@ -1,14 +1,14 @@
 // Question 1
 function maxOfTwoNumbers(a, b) {
+    let max2 = null;
 if (a > b) {
-    let max2 = a;
-    return (max2);
+    max2 = a;
 } else if (a <= b){
-    let max2 = b;
-    console.log(max2);
+    max2 = b;
 }
+    return (max2);
 }
-maxOfTwoNumbers(1, 10);
+console.log(maxOfTwoNumbers(1, 10));
 
 // Question 2
 function maxOfThree(x, y, z) {
@@ -22,21 +22,21 @@ function maxOfThree(x, y, z) {
       if(z > max3) {
          max3 = z;
       }
-    console.log(max3);  
+    return (max3);  
   }
-maxOfThree(93, 67, 122);
+console.log(maxOfThree(93, 67, 122));
 
 // Question 3
 function isCharacterAVowel(a) {
     let b = a.toLowerCase();
     if (b == 'a' || b == 'e' || b == 'i' 
     || b == 'o' || b == 'u') {
-        console.log('True')
+        return ('True')
     } else {
-        console.log('False')
+        return ('False')
     }
 }
-isCharacterAVowel('I');
+console.log(isCharacterAVowel('I'));
 
 // Question 4
 function sumArray(data) {
@@ -45,9 +45,9 @@ function sumArray(data) {
     for (let i = 0; i < data.length; i++) {
         arraySum = arraySum + data[i];
     }
-    console.log(arraySum);
+    return (arraySum);
 }
-sumArray([1, 2, 3, 4, 5, 6, 7, 8, 9, 10]);
+console.log(sumArray([1, 2, 3, 4, 5, 6, 7, 8, 9, 10]));
 
 // Question 4
 function multiplyArray(data) {
@@ -56,27 +56,27 @@ function multiplyArray(data) {
     for (let i = 0; i < data.length; i++) {
         arrayMult = arrayMult * data[i];
     }
-    console.log(arrayMult);
+    return (arrayMult);
 }
-multiplyArray([1, 2, 3, 4]);
+console.log(multiplyArray([1, 2, 3, 4]));
 
 // Question 5
 var numberOfArguments = function(data){
   countInput = data.length;
-  console.log(countInput);
+  return (countInput);
 }
-numberOfArguments([1, 2, 3, 4, 5, 6, 7, 8]);
+console.log(numberOfArguments([1, 2, 3, 4, 5, 6, 7, 8]));
 
 
 // Question 6
 var reverseString = function (words){
  let backWords = words.split('').reverse().join('');
- console.log(backWords);
+ return (backWords);
 };
-reverseString('Testing');
+console.log(reverseString('Testing'));
 
 // Question 7
-let randomWords = ['First', 'Backflip', 'fail', 'try', 'Rodeo'];
+let randomWords = ['Learnt', 'First', 'Backflip', 'fail', 'try', 'Rodeo'];
 
 function findLongestWord (wordArray) {
     let longest = '1';
@@ -87,9 +87,9 @@ function findLongestWord (wordArray) {
            longest = wordArray[i];
        }
     }
-    console.log(longest);
+    return (longest);
 };
-findLongestWord(randomWords);
+console.log(findLongestWord(randomWords));
 
 // Question 8
 function filterLongWords (wordArray, number) {
@@ -102,9 +102,9 @@ function filterLongWords (wordArray, number) {
             newArrayCounter += 1;
         }
      }
-     console.log(newArray);
+     return (newArray);
 };
-filterLongWords(randomWords, 4);
+console.log(filterLongWords(randomWords, 4));
 
 // Bonus 1
 //??????
