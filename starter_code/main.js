@@ -113,9 +113,12 @@ console.log(findLongestWord(['David', 'Subrata', 'Martin', 'Yoel', 'han']));
 
 
 // Question 8
-function filterLongWords () {
+// function filterLongWords () {
+//     const result = filterLongWords.filter(word => word.length > i);
+
   
-}
+// }
+// console.log(filterLongWords(['David', 'Subrata', 'Martin', 'Yoel', 'han']));
 
 
 // Bonus 1
