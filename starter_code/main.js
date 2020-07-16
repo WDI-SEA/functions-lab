@@ -44,7 +44,7 @@ function isCharacterAVowel(){
     }
 
 var letter= "c";
-isCharacterAVowel();
+console.log(isCharacterAVowel());
 
 
 // Question 4
