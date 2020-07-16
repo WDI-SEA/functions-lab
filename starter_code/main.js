@@ -1,16 +1,49 @@
-// Question 1
-function maxOfTwoNumbers() {
-
+ // Question 1
+function maxOfTwoNumbers(numOne, numTwo) 
+{
+    if (numOne >= numTwo)
+    {
+        return numOne;
+    }
+    else
+    {
+        return numTwo;
+    }
 }
 
 // Question 2
-function maxOfThree() {
-
+function maxOfThree(numOne, numTwo, numThree) 
+{
+    if (numOne >= numTwo && numOne >= numThree)
+    {
+        return numOne;
+    }
+    else if (numTwo >= numThree)
+    {
+        return numTwo;
+    }
+    else
+    {
+        return numThree;
+    }
 }
 
 // Question 3
-function isCharacterAVowel() {
-
+function isCharacterAVowel(character) 
+{
+    switch (character.toUpperCase())
+    {
+        case "A":
+        case "B":
+        case "C":
+        case "O":
+        case "U":
+            return true;
+            break;
+        default:
+            return false;
+            break;
+    }
 }
 
 // Question 4
