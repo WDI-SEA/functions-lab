@@ -15,8 +15,6 @@
 
 ## Introduction
 
-> ***Note:*** _This can be a pair programming activity or done independently._
-
 Let's practice writing some functions! 
 
 ## Exercise
@@ -64,15 +62,14 @@ For example, calling the function with the string "General Assembly" will return
 
 Open the file `main.js`. All the function names are already inside the file; you just need to implement the functions by adding code inside each one.
 
+##### OPTION 1:
+Copy/paste contents of `main.js` into replit and work through the problems there.
+
+##### Option 2:
 Use the Chrome Dev Tools console to practice executing your code.
 
+##### Option 3:
 Alternately, you can add `console.log();` statements in your `main.js` file; then you should see the values displayed in the console when you open the `index.html` file in your browser.
-
-#### Deliverable
-
-You'll review the answers with the instructor in class.
-
-
 
 ### ADDITIONAL RESOURCES
 
