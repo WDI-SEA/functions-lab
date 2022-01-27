@@ -1,8 +1,7 @@
 # ![](https://ga-dash.s3.amazonaws.com/production/assets/logo-9f88ae6c9c3871690e33280fcf557f33.png) Functions Lab (90 mins)
 
 
-### STUDENT PRE-WORK
-*Before this lesson, you should already be able to:*
+### Pre-requisites:*
 
 - Differentiate between data types (strings, numbers, Booleans).
 - Use if/else if/else conditionals to control program flow based on Boolean conditions.
