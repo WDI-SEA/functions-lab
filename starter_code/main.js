@@ -26,16 +26,16 @@ function multiplyArray() {
 
 
 // Question 5
-var numberOfArguments = function(){
+const numberOfArguments = function(){
   
 }
 
 
 
 // Question 6
-var reverseString = function (){
+const reverseString = function (){
   
-};
+}
 
 
 // Question 7
